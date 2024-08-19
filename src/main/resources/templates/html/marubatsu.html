@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+<meta charset="UTF-8">
+
+
+<!-- CSS -->
+	<link rel="stylesheet" th:href="@{/css/marubatsu.css}">
+	<!-- JS -->
+	<script th:src="@{/webjars/jquery/jquery.min.js}" defer></script>
+	<script th:src="@{/webjars/bootstrap/js/bootstrap.min.js}" defer></script>
+
+</head>
+<body>
+
+<div class="wrap">
+<p>先手赤、後手青</br>はじめ</p>
+<p class="text">赤の番</p>
+<table>
+<tr>
+    <td class="cell td1"></td>
+    <td class="cell td2"></td>
+    <td class="cell td3"></td>
+</tr>
+<tr>
+    <td class="cell td4"></td>
+    <td class="cell td5"></td>
+    <td class="cell td6"></td>
+</tr>
+<tr>
+    <td class="cell td7"></td>
+    <td class="cell td8"></td>
+    <td class="cell td9"></td>
+</tr>
+</table>
+
+</div>
+<p class="reset">最初からやる</p>
+<script th:src="@{/js/marubatsu.js}"></script>
+</body>
+</html>
